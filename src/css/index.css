@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1c4185;
+}
+
+.navbar .nav-link {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-right: 2vw;
+  text-decoration: none;
+  color: #fb2f48;
+}
+
+.navbar .selected {
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  text-decoration-thickness: 2px;
+}
+
+.home-content {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.home-content h1 {
+  margin: -0.2% 0;
+}
+
+.home-content .heading-top {
+  color: #fb2f48;
+}
+
+.home-content .heading-bot {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-content .heading-span {
+  color: black;
+  font-size: 1rem;
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  margin-right: -1.2%;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.home-content .heading-circle {
+  background-color: #1c4185;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: -1;
+}
+
+.home-content .media-links {
+  margin-top: 0.5%;
+}
+
+.home-content .media-links a, .home-content .media-links Link {
+  color: white;
+  padding: 1%;
+}
+/*# sourceMappingURL=index.css.map */

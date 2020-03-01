@@ -126,4 +126,25 @@
   color: white;
   padding: 1%;
 }
+
+.audio-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: white;
+  position: relative;
+  top: -50px;
+  cursor: pointer;
+}
+
+.audio-player p {
+  margin-left: .3vw;
+}
+
+.audio-player i {
+  position: relative;
+  top: 4px;
+}
 /*# sourceMappingURL=index.css.map */

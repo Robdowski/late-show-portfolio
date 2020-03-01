@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
+
     return (
         <div className='navbar'>
             <h1><span className='nav-name'>Robert </span>Carter</h1>

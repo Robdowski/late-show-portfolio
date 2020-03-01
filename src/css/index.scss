@@ -1,6 +1,16 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+
+.App{
+    background-image: url('../images/skyline2.jpg');
+    background-position: center;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    background-color:#374359;
+    height: 100%;
 }
 
 .navbar{
@@ -17,7 +27,7 @@
     h1{
         font-weight: 900;
         margin-left: 1vw;
-        color:white;
+        color: white;
     }
 
     span{
@@ -65,6 +75,7 @@
     h1{
         margin: -0.2% 0;
         font-weight: bolder;
+        z-index: 2;
     }
 
     .heading-top{
@@ -91,11 +102,23 @@
         width:600px;
         position: absolute;
         align-self: center;
-        z-index: -1;
+        z-index: 1;
+        border: 1px solid black;
+    }
+
+    .heading-circle-large{
+        background-color:white;
+        border-radius: 50%;
+        height: 620px;
+        width: 620px;
+        position: absolute;
+        align-self: center;
+        border: 2px solid black;
     }
 
     .media-links{
         margin-top: 0.5%;
+        z-index: 2;
         a, Link{
             color:white;
             padding:1%;
@@ -110,6 +133,7 @@
     position: relative;
     top: -50px;
     cursor: pointer;
+    z-index: 2;
 
     p{
         margin-left: .3vw;
@@ -120,4 +144,44 @@
         position: relative;
         top:4px;
     }
+}
+
+.about-content-container{
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    margin:0 auto;
+
+    .about-content{
+        width: calc(400px + 30vw);
+        background-color: white;
+        padding: 1%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+        top: 20%;
+        
+
+        h1{
+        color:#fb2f48;
+        font-size: 6rem;
+        align-self: start;
+        }
+
+        p{
+        color:white;
+        font-size: 1.6rem;
+        }
+
+        div{
+        width: 100%;
+        background-color: #1c4185;
+        padding: 1%; 
+        overflow: hidden;
+        } 
+    }
+
+   
 }

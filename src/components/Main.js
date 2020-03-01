@@ -30,36 +30,15 @@ const musicLink = {
     animate: {y: 1},
 }
 
-const useAudio = () => {
-        const [audio] = useState(new Audio(mp3));
-        const [playing, setPlaying] = useState(false);
-      
-        const toggle = () => setPlaying(!playing);
-      
-        useEffect(() => {
-            playing ? audio.play() : audio.pause();
-          },
-          [playing]
-        );
-      
-        useEffect(() => {
-          audio.addEventListener('ended', () => setPlaying(false));
-          return () => {
-            audio.removeEventListener('ended', () => setPlaying(false));
-          };
-        }, []);
-      
-        return [playing, toggle];
-};
 
-const Main = () => {
 
-    const [playing, toggle] = useAudio()
+const Main = (props) => {
     return (
         <div className='home-content'>
             <motion.div className='heading-circle' initial='hidden' animate='visible' variants={variants}></motion.div>
-            <motion.div onClick={toggle} animate={{y: [0, -5, 0, 5, 0]}} transition={{loop:Infinity, duration:3}} className="audio-player">
-                <i class="fas fa-music"></i><p>{playing ? "Playing! (Click To Pause)" : "Play The Theme!"}</p>
+            <motion.div className='heading-circle-large' initial='hidden' animate='visible' variants={variants}></motion.div>
+            <motion.div onClick={props.toggle} animate={{y: [0, -5, 0, 5, 0]}} transition={{loop:Infinity, duration:3}} className="audio-player">
+                <i class="fas fa-music"></i><p>{props.playing ? "Playing! (Click To Pause)" : "Play The Theme!"}</p>
             </motion.div>
             <motion.h1 className='heading-top' initial='left' animate='middle' variants={variants} transition={spring} >The Late Show</motion.h1>
             <motion.h1 className='heading-bot' initial='right' animate='middle' variants={variants} transition={spring}><span className='heading-span'>with</span> Robert Carter</motion.h1>

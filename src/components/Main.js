@@ -34,7 +34,7 @@ const Main = () => {
                 <a href='https://github.com/Robdowski' target='_blank'><motion.i whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} class="fab fa-github-square"></motion.i></a>
                 <a href='https://www.linkedin.com/in/robertcarterdev/' target='_blank'><motion.i whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} class="fab fa-linkedin"></motion.i></a>
                 <Link exact to='/portfolio'><motion.i whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} class="fas fa-folder"></motion.i></Link>
-                <Link exact t0='/contact'><motion.i whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} class="fas fa-envelope"></motion.i></Link>
+                <Link exact to='/contact'><motion.i whileHover={{scale: 1.1}} whileTap={{scale: 0.9}} class="fas fa-envelope"></motion.i></Link>
             </motion.div>
         </div>
     )

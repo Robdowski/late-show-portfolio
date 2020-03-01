@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom'
 
 import Main from './components/Main'
 import Nav from './components/Nav'
+import About from './components/About'
 
 function App() {
   return (

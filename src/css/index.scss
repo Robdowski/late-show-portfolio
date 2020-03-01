@@ -24,6 +24,19 @@
     align-items: center;
     background-color: #1c4185;
 
+    .audio-player-nav{
+        position: relative;
+        left: 5%;
+        display:flex;
+        color: white;
+        cursor: pointer;
+
+        p{
+           margin-left: .3vw; 
+        }
+        
+    }
+
     h1{
         font-weight: 900;
         margin-left: 1vw;
@@ -50,7 +63,15 @@
         margin-right: 1vw;
         text-decoration: none;
         color: #fb2f48;
+        outline-width: 0px;
     }
+
+    .nav-link:active, .nav-link:focus, .nav-link:visited {
+        outline: 0;
+        border: none;
+        -moz-outline-style: none;
+        box-shadow: none;
+      }
 
     .selected{
         text-decoration: underline;
@@ -137,7 +158,6 @@
 
     p{
         margin-left: .3vw;
-
     }
 
     i{

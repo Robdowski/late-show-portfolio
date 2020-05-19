@@ -27,16 +27,21 @@ p, a {
   align-items: center;
   background-color: #1c4185;
 }
+
 .navbar .audio-player-nav {
   position: relative;
   left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: white;
   cursor: pointer;
 }
+
 .navbar .audio-player-nav p {
-  margin-left: 0.3vw;
+  margin-left: .3vw;
 }
+
 .navbar h1 {
   font-weight: 900;
   margin-left: 1vw;
@@ -63,7 +68,8 @@ p, a {
   outline: 0;
   border: none;
   -moz-outline-style: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .navbar .selected {
   text-decoration: underline;

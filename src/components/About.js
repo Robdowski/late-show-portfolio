@@ -18,10 +18,9 @@ const About = () => {
             <motion.div initial='hidden' animate='visible' variants={variants} className="about-content">
             <h1>About</h1>
             <div className='about-paragraph'>
-                <p>Laborum ea laborum est esse qui exercitation pariatur. Excepteur anim dolore aliquip duis dolor excepteur velit ut consectetur. Ea exercitation deserunt reprehenderit anim amet consectetur id eu non sunt minim laborum irure. Pariatur ex est exercitation mollit consectetur cillum ipsum tempor eiusmod mollit ex. Laborum ea laborum est esse qui exercitation pariatur. Excepteur anim dolore aliquip duis dolor excepteur velit ut consectetur. Ea exercitation deserunt reprehenderit anim amet consectetur id eu non sunt minim laborum irure. Pariatur ex est exercitation mollit consectetur cillum ipsum tempor eiusmod mollit ex.</p>
-                <p>
-                Laborum ea laborum est esse qui exercitation pariatur. Excepteur anim dolore aliquip duis dolor excepteur velit ut consectetur. Ea exercitation deserunt reprehenderit anim amet consectetur id eu non sunt minim laborum irure. Pariatur ex est exercitation mollit consectetur cillum ipsum tempor eiusmod mollit ex.
-                </p>
+                <p>I'm a past multiple award winning Risk Coordinator at Capital One now turned Full Stack Software Engineer. My specialties include full-stack development with React, Node, Express, Relational Databses, RESTful and GraphQL APIs.</p>
+                <br /><p>After years spent working on a team in the finance industry, I've developed strong teamwork, organizational, communication, and problem-solving skills. I am interested in combining those skills with web development to create cutting edge web applications as part of a team.</p>
+                <br /><p>If I'm not programming you can likely find me in the kitchen. One of my lifelong passions is cooking, because like software engineering, you will never find yourself without something to learn. If you'd like to know more, feel free to get in touch!</p>
             </div>
             </motion.div>
         </div>

@@ -2,6 +2,7 @@ import skyline from '../images/skyline.jpg'
 import skyline2 from '../images/skyline2.jpg'
 import sauti from '../images/sauti.png'
 import cowboy from '../images/spacecowboy.png'
+import animal from '../images/saveanimals.png'
 
 export default [
     {
@@ -21,11 +22,11 @@ export default [
         tech: "React, Django, PostgreSQL" 
     },
     {
-        title: "Sauti Databank 3",
-        desc: "Aliqua fugiat proident voluptate nulla mollit Lorem eu eiusmod qui tempor aliqua consectetur. Anim ea excepteur ea ut amet esse officia. Aute sunt ex aute veniam cupidatat deserunt eu tempor laboris nulla minim exercitation.",
-        img: "../images/skyline.jpg",
-        code: "https://github.com/Lambda-School-Labs/sauti-databank-fe",
-        live: "https://sauti.now.sh",
-        tech: "React, Node/Express, GraphQL, MySQL"
+        title: "Save The Animals",
+        desc: "Save The Animals was built over the course of a week with a team of two front-end developers and one backend developer. The client will allow a user to register as an organization or a supporter, and either create campaigns to help save endangered species, or as a supporter, donate to those causes.",
+        img: animal,
+        code: "https://github.com/save-the-animals-bw/save-the-animals",
+        live: "https://savetheanimals.now.sh/",
+        tech: "React, Node/Express, PostgreSQL"
     }
 ]

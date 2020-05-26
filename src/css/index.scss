@@ -215,6 +215,39 @@ p, a {
     height: 100vh;
     font-family: 'Playfair Display', serif;
     margin:0 auto;
+    
+    .portfolio-card-container{
+        display: flex;
+       
+
+        .portfolio-container-left, .portfolio-container-right{
+            display:flex;
+            flex-direction: column;
+            width: 15%;
+            align-items: center;
+            justify-content: center;
+            i{
+                color:white;
+                font-size: 2rem;
+                margin-top: 20%;         
+             }
+            i:hover{
+                    cursor: pointer;
+                }
+
+            .portfolio-container-icon{
+                
+             a{
+                 display:flex;
+                flex-direction: column;
+                color:white;
+                text-decoration: none;
+                }
+
+             
+            }
+        }
+    }
 
     .portfolio-card-outer{
         width: calc(400px + 30vw);
@@ -249,6 +282,7 @@ p, a {
             
             .portfolio-image{
                 height: 400px;
+                width: 100%;
             }
     }
 }

@@ -27,21 +27,16 @@ p, a {
   align-items: center;
   background-color: #1c4185;
 }
-
 .navbar .audio-player-nav {
   position: relative;
   left: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: white;
   cursor: pointer;
 }
-
 .navbar .audio-player-nav p {
-  margin-left: .3vw;
+  margin-left: 0.3vw;
 }
-
 .navbar h1 {
   font-weight: 900;
   margin-left: 1vw;
@@ -58,7 +53,9 @@ p, a {
   margin-right: 1.5vw;
 }
 .navbar .nav-link {
+  font-family: "Playfair Display", serif;
   font-size: 1.2rem;
+  font-weight: 900;
   margin-right: 1vw;
   text-decoration: none;
   color: #fb2f48;
@@ -87,13 +84,11 @@ p, a {
   justify-content: center;
   overflow: hidden;
 }
-
 .home-content h1 {
   margin: -0.2% 0;
   font-weight: bolder;
   z-index: 2;
 }
-
 .home-content .heading-top {
   color: #fb2f48;
 }
@@ -197,6 +192,30 @@ p, a {
   font-family: "Playfair Display", serif;
   margin: 0 auto;
 }
+.portfolio-container .portfolio-card-container {
+  display: flex;
+}
+.portfolio-container .portfolio-card-container .portfolio-container-left, .portfolio-container .portfolio-card-container .portfolio-container-right {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-container .portfolio-card-container .portfolio-container-left i, .portfolio-container .portfolio-card-container .portfolio-container-right i {
+  color: white;
+  font-size: 2rem;
+  margin-top: 20%;
+}
+.portfolio-container .portfolio-card-container .portfolio-container-left i:hover, .portfolio-container .portfolio-card-container .portfolio-container-right i:hover {
+  cursor: pointer;
+}
+.portfolio-container .portfolio-card-container .portfolio-container-left .portfolio-container-icon a, .portfolio-container .portfolio-card-container .portfolio-container-right .portfolio-container-icon a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+}
 .portfolio-container .portfolio-card-outer {
   width: calc(400px + 30vw);
   background-color: white;
@@ -227,6 +246,7 @@ p, a {
 }
 .portfolio-container .portfolio-card-outer .portfolio-image {
   height: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

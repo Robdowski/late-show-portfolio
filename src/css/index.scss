@@ -216,6 +216,7 @@ p, a {
     font-family: 'Playfair Display', serif;
     margin:0 auto;
     
+
     .portfolio-card-container{
         display: flex;
        
@@ -259,7 +260,7 @@ p, a {
         align-items: center;
         margin: 0 auto;
         position: relative;
-        top: 20%;
+        top: 10%;
 
         h1{
             color:#fb2f48;
@@ -283,6 +284,10 @@ p, a {
             .portfolio-image{
                 height: 400px;
                 width: 100%;
+            }
+
+            .portfolio-tech{
+                margin-top:5%;
             }
     }
 }

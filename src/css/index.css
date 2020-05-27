@@ -226,7 +226,7 @@ p, a {
   align-items: center;
   margin: 0 auto;
   position: relative;
-  top: 20%;
+  top: 10%;
 }
 .portfolio-container .portfolio-card-outer h1 {
   color: #fb2f48;
@@ -247,6 +247,9 @@ p, a {
 .portfolio-container .portfolio-card-outer .portfolio-image {
   height: 400px;
   width: 100%;
+}
+.portfolio-container .portfolio-card-outer .portfolio-tech {
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=index.css.map */

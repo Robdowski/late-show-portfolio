@@ -8,6 +8,7 @@ import Main from './components/Main'
 import Nav from './components/Nav'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
 
 import mp3 from './components/lateshow.mp3'
 
@@ -42,6 +43,7 @@ function App() {
       <Route exact path='/' render={(props) => <Main {...props} playing={playing} toggle={toggle} useAudio={useAudio} />} />
       <Route exact path='/about' render={(props) => <About {...props} />} />
       <Route exact path='/portfolio' render={(props) => <Portfolio {...props} />} />
+      <Route exact path='/contact' render={(props) => <Contact {...props} />} />
     </div>
   );
 }

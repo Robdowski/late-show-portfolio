@@ -9,9 +9,13 @@ const music = {
 
 const Nav = (props) => {
 
+    const handleHome = () => {
+        props.history.push('/')
+    }
+
     return (
         <div className='navbar'>
-            <h1><span className='nav-name'>Robert </span>Carter</h1>
+            <h1 className='nav-title' onClick={() => handleHome()}><span className='nav-name'>Robert </span>Carter</h1>
             {props.location.pathname !== "/" && 
             <motion.div onClick={props.toggle} initial='initial' animate='animate' variants={music} transition={{duration: .5}} className="audio-player-nav">
                 <i class="fas fa-music"></i><p>{props.playing ? "Playing! (Click To Pause)" : "Play The Theme!"}</p>

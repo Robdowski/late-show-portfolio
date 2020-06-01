@@ -27,6 +27,9 @@ p, a {
   align-items: center;
   background-color: #1c4185;
 }
+.navbar .nav-title:hover {
+  cursor: pointer;
+}
 .navbar .audio-player-nav {
   position: relative;
   left: 5%;

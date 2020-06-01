@@ -12,12 +12,12 @@ html {
   background-size: cover;
 }
 
-p, a {
+p, a, li {
   font-family: "Arial";
 }
 
 .navbar {
-  height: 40px;
+  height: 60px;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -26,6 +26,7 @@ p, a {
   justify-content: space-between;
   align-items: center;
   background-color: #1c4185;
+  z-index: 999;
 }
 .navbar .nav-title:hover {
   cursor: pointer;
@@ -152,142 +153,139 @@ p, a {
   top: 4px;
 }
 
-.about-content-container {
+.content-container {
   height: 100vh;
   font-family: "Playfair Display", serif;
   margin: 0 auto;
 }
-.about-content-container .about-content {
-  width: calc(400px + 30vw);
+.content-container .content-card {
+  width: calc(400px + 45vw);
   background-color: white;
-  padding: 1%;
+  padding: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   position: relative;
-  top: 20%;
+  top: 8%;
+  height: 90%;
 }
-.about-content-container .about-content h1 {
+.content-container .content-card h1 {
   color: #fb2f48;
   font-size: 6rem;
   align-self: start;
 }
-.about-content-container .about-content p {
+.content-container .content-card p {
   color: white;
   font-size: 1.6rem;
 }
-.about-content-container .about-content div {
+.content-container .content-card div {
   width: 100%;
   background-color: #1c4185;
   padding: 1%;
   overflow: hidden;
 }
-.about-content-container .about-paragraph {
-  text-align: justify;
-}
-
-.portfolio-container {
-  height: 100vh;
-  font-family: "Playfair Display", serif;
-  margin: 0 auto;
-}
-.portfolio-container .portfolio-card-container {
+.content-container .content-card #portfolio-card-header {
+  background-color: white;
   display: flex;
-}
-.portfolio-container .portfolio-card-container .portfolio-container-left, .portfolio-container .portfolio-card-container .portfolio-container-right {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
-.portfolio-container .portfolio-card-container .portfolio-container-left i, .portfolio-container .portfolio-card-container .portfolio-container-right i {
-  color: white;
-  font-size: 2rem;
-  margin-top: 20%;
+.content-container .content-card #portfolio-card-header #portfolio-h1 {
+  background-color: white;
+  font-size: 2.8rem;
 }
-.portfolio-container .portfolio-card-container .portfolio-container-left i:hover, .portfolio-container .portfolio-card-container .portfolio-container-right i:hover {
+.content-container .content-card #portfolio-card-header .icon-container {
+  width: 11%;
+  background-color: white;
+  color: #1c4185;
   cursor: pointer;
 }
-.portfolio-container .portfolio-card-container .portfolio-container-left .portfolio-container-icon a, .portfolio-container .portfolio-card-container .portfolio-container-right .portfolio-container-icon a {
+.content-container .content-card #portfolio-card-header .icon-container:hover {
+  color: #2a61c6;
+  transition: ease-in-out 0.2s;
+}
+.content-container .content-card #portfolio-card-header .icon-container i {
+  font-size: 4rem;
+  cursor: pointer;
+}
+.content-container .content-card #portfolio-card-header .icon-container p {
+  color: #1c4185;
+}
+.content-container .inner-card-container {
+  height: 80%;
+  text-align: justify;
+}
+.content-container .inner-card-container #about-content {
+  display: flex;
+  height: 100%;
+}
+.content-container .inner-card-container #about-content #profile-pic {
+  height: 100%;
+}
+.content-container .inner-card-container #about-content #about-paragraphs {
+  margin: 0;
+  padding: 0;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+.content-container .inner-card-container #about-content #about-paragraphs p {
+  width: 80%;
+}
+.content-container .inner-card-container #portfolio-card-top {
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1%;
+}
+.content-container .inner-card-container #portfolio-card-top img {
+  width: 55%;
+}
+.content-container .inner-card-container #portfolio-card-top ul {
+  width: 35%;
+  height: 100%;
+  color: white;
+  list-style-type: disc;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.content-container .inner-card-container #portfolio-card-top ul li {
+  display: list-item;
+  margin-bottom: 12%;
+}
+.content-container .inner-card-container #portfolio-card-bottom {
+  margin: 2.5%;
+  display: flex;
+}
+.content-container .inner-card-container #portfolio-card-bottom p {
+  font-size: 1.4rem;
+  text-align: justify;
+  width: 55%;
+}
+.content-container .inner-card-container #portfolio-card-bottom #portfolio-links {
+  display: flex;
+  width: 45%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content-container .inner-card-container #portfolio-card-bottom #portfolio-links i {
+  font-size: 3rem;
+}
+.content-container .inner-card-container #portfolio-card-bottom #portfolio-links a {
   display: flex;
   flex-direction: column;
   color: white;
   text-decoration: none;
-}
-.portfolio-container .portfolio-card-outer {
-  width: calc(400px + 30vw);
-  background-color: white;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  position: relative;
-  top: 10%;
-}
-.portfolio-container .portfolio-card-outer h1 {
-  color: #fb2f48;
-  font-size: 6rem;
-  align-self: start;
-}
-.portfolio-container .portfolio-card-outer p {
-  color: white;
-  font-size: 1.6rem;
-  text-align: justify;
-}
-.portfolio-container .portfolio-card-outer div {
-  width: 100%;
-  background-color: #1c4185;
-  padding: 1%;
-  overflow: hidden;
-}
-.portfolio-container .portfolio-card-outer .portfolio-image {
-  height: 400px;
-  width: 100%;
-}
-.portfolio-container .portfolio-card-outer .portfolio-tech {
-  margin-top: 5%;
-}
-
-.contact-container {
-  height: 100vh;
-  font-family: "Playfair Display", serif;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact-container .contact-card {
-  width: calc(400px + 30vw);
-  background-color: white;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  position: relative;
-  top: 10%;
-}
-.contact-container .contact-card h1 {
-  color: #fb2f48;
-  font-size: 6rem;
-  align-self: start;
-}
-.contact-container .contact-card p {
-  color: white;
-  font-size: 1.6rem;
-  text-align: justify;
-}
-.contact-container .contact-card div {
-  width: 100%;
-  background-color: #1c4185;
-  padding: 1%;
-  overflow: hidden;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

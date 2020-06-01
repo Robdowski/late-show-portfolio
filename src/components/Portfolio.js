@@ -37,26 +37,38 @@ const Portfolio = () => {
     }
 
     return (
-        <div className='portfolio-container'>
-            <motion.div initial='hidden' animate='visible' variants={variants} className='portfolio-card-outer'>
-                <h1>{data[slide].title}</h1>
-                <div className='portfolio-card-container'>
-                    <div className='portfolio-container-left'>
-                        <div className='portfolio-container-icon'>
-                            <a href={data[slide].live} target='_blank'><i class="fas fa-desktop"></i>Live</a>
-                        </div>
+        <div className='content-container'>
+            <motion.div initial='hidden' animate='visible' variants={variants} className='content-card'>
+                <div id='portfolio-card-header'>
+                    <div className='icon-container'>
                         <i class="fas fa-chevron-left" onClick={() => handleClickLeft()}></i>
+                        <p>Prev</p>
                     </div>
-                    <div className='portfolio-card'>
+                    <div id='portfolio-h1'>
+                      <h1>{data[slide].title}</h1>  
+                    </div>
+                    <div class='icon-container'>
+                        <i className="fas fa-chevron-right" onClick={() => handleClickRight()}></i>
+                        <p>Next</p>
+                    </div>
+                    
+                </div>
+                
+                <div className='inner-card-container'>
+                    <div id='portfolio-card-top'>
                         <img className='portfolio-image' src={`${data[slide].img}`} />
-                        <p>{data[slide].desc}</p>
-                        <p className='portfolio-tech'>{data[slide].tech}</p>
+                        <ul>
+                            <li>{data[slide].bullets[0]}</li>
+                            <li>{data[slide].bullets[1]}</li>
+                            <li>{data[slide].bullets[2]}</li>
+                        </ul>
                     </div>
-                    <div className='portfolio-container-right'>
-                        <div className='portfolio-container-icon'>
+                    <div id='portfolio-card-bottom'>
+                        <p>{data[slide].desc}</p>
+                        <div id='portfolio-links'>
+                            <a href={data[slide].live} target='_blank'><i class="fas fa-desktop"></i>Live</a>
                             <a href={data[slide].code} target='_blank'><i class="fas fa-laptop-code"></i>Code</a>
                         </div>
-                        <i class="fas fa-chevron-right" onClick={() => handleClickRight()}></i>
                     </div>
                 </div>
             </motion.div>

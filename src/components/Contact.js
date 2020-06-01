@@ -14,9 +14,9 @@ const variants = {
 
 const Contact = () => {
     return (
-        <div className='contact-container'>
+        <div className='content-container'>
 
-<motion.div initial='hidden' animate='visible' variants={variants} className='contact-card'>
+<motion.div initial='hidden' animate='visible' variants={variants} className='content-card'>
             <h1>Contact Me</h1>
             <form
                 action="https://formcarry.com/s/A1fDSooRTOQ"

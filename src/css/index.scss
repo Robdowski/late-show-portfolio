@@ -11,12 +11,12 @@ html{
     -o-background-size: cover;
     background-size: cover;    
 }
-p, a {
+p, a, li {
         font-family: 'Arial'
     }
 
 .navbar{
-    height: 40px;
+    height: 60px;
     padding:0;
     margin: 0;
     width: 100%;
@@ -25,6 +25,7 @@ p, a {
     justify-content: space-between;
     align-items: center;
     background-color: #1c4185;
+    z-index: 999;
 
     .nav-title{
         &:hover{
@@ -174,22 +175,23 @@ p, a {
     }
 }
 
-.about-content-container{
+.content-container{
     height: 100vh;
     font-family: 'Playfair Display', serif;
     margin:0 auto;
 
-    .about-content{
-        width: calc(400px + 30vw);
+    .content-card{
+        width: calc(400px + 45vw);
         background-color: white;
-        padding: 1%;
+        padding: 2%;
         display:flex;
         flex-direction:column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
         position: relative;
-        top: 20%;
+        top: 8%;
+        height: 90%;
 
         h1{
         color:#fb2f48;
@@ -208,133 +210,129 @@ p, a {
         padding: 1%; 
         overflow: hidden;
         } 
-    }
 
-    .about-paragraph{
-        text-align: justify;
-    }  
-}
-
-.portfolio-container{
-    height: 100vh;
-    font-family: 'Playfair Display', serif;
-    margin:0 auto;
-    
-
-    .portfolio-card-container{
-        display: flex;
-       
-
-        .portfolio-container-left, .portfolio-container-right{
+        #portfolio-card-header{
+            background-color: white;
             display:flex;
-            flex-direction: column;
-            width: 15%;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            i{
-                color:white;
-                font-size: 2rem;
-                margin-top: 20%;         
-             }
-            i:hover{
+
+            #portfolio-h1{
+                background-color:white;
+                font-size: 2.8rem;
+            }
+           
+
+            .icon-container{
+                width: 11%;
+                background-color:white;
+                color:#1c4185;
+                cursor: pointer;
+                &:hover{
+                        color: #2a61c6;
+                        transition: ease-in-out .2s;
+                    }
+
+                i{
+                    font-size: 4rem;
                     cursor: pointer;
+                  
                 }
 
-            .portfolio-container-icon{
-                
-             a{
-                 display:flex;
-                flex-direction: column;
-                color:white;
-                text-decoration: none;
+                p{
+                   color: #1c4185; 
                 }
-
-             
             }
         }
     }
 
-    .portfolio-card-outer{
-        width: calc(400px + 30vw);
-        background-color: white;
-        padding: 1%;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        position: relative;
-        top: 10%;
-
-        h1{
-            color:#fb2f48;
-            font-size: 6rem;
-            align-self: start;
-            }
-    
-            p{
-            color:white;
-            font-size: 1.6rem;
-            text-align: justify;
-            }
-    
-            div{
-            width: 100%;
-            background-color: #1c4185;
-            padding: 1%; 
-            overflow: hidden;
-            }
-            
-            .portfolio-image{
-                height: 400px;
-                width: 100%;
-            }
-
-            .portfolio-tech{
-                margin-top:5%;
-            }
-    }
-}
-
-.contact-container{
-    height: 100vh;
-    font-family: 'Playfair Display', serif;
-    margin:0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-    .contact-card{
-        width: calc(400px + 30vw);
-        background-color: white;
-        padding: 1%;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        position: relative;
-        top: 10%;
-        
-         h1{
-        color:#fb2f48;
-        font-size: 6rem;
-        align-self: start;
-            }
-
-         p{
-        color:white;
-        font-size: 1.6rem;
+    .inner-card-container{
+        height: 80%;
         text-align: justify;
+
+        #about-content{
+            display:flex;
+            height: 100%;
+
+            #profile-pic{
+                height: 100%;
+            }
+
+            #about-paragraphs{
+                margin: 0;
+                padding: 0;
+                width: 82%;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                text-align: left;
+
+                p{
+                    width: 80%;
+                }
+            }
+        }
+        
+
+        #portfolio-card-top{
+            height: 60%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 1%;
+
+            img{
+            width: 55%;
+            
+            }
+
+            ul{
+                width: 35%;
+                height: 100%;
+                color: white;
+                list-style-type: disc;
+                margin-left: 15px;
+                font-size: 1.2rem;
+                text-align: left;
+
+                li{
+                    display:list-item;
+                    margin-bottom: 12%;
+                }
+            }
         }
 
-        div{
-        width: 100%;
-        background-color: #1c4185;
-        padding: 1%; 
-        overflow: hidden;
-            }
-    }
+        #portfolio-card-bottom{
+            margin: 2.5%;
+            display:flex;
 
-   
+            p{ 
+                font-size: 1.4rem;
+                text-align: justify;
+                width: 55%;
+            }
+
+            #portfolio-links{
+                display:flex;
+                width: 45%;
+                justify-content: space-evenly;
+                align-items: center;
+
+                i{
+                    font-size: 3rem;
+                }
+
+                a{
+                    display:flex;
+                   flex-direction: column;
+                   color:white;
+                   text-decoration: none;
+                   font-size: 1.4rem;
+                   text-align: center;
+                }
+            }
+        }
+    }     
 }

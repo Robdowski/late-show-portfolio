@@ -23,6 +23,7 @@ p, a, li {
   margin: 0;
   width: 100%;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,26 +162,26 @@ p, a, li {
 }
 
 .content-container {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Playfair Display", serif;
   margin: 0 auto;
 }
 .content-container .content-card {
-  width: max(80vw, 400px);
+  width: min(80vw, 1000px);
   background-color: white;
   padding: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 10% auto;
   position: relative;
   top: 8%;
   height: 90%;
 }
 .content-container .content-card h1 {
   color: #fb2f48;
-  font-size: max(6vw, 60px);
+  font-size: min(8vw, 80px);
   align-self: start;
 }
 .content-container .content-card p {
@@ -224,12 +225,31 @@ p, a, li {
   height: 80%;
   text-align: justify;
 }
+.content-container .inner-card-container #contact-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+.content-container .inner-card-container #contact-form .form-item {
+  display: flex;
+  flex-direction: column;
+  width: max(33%, 200px);
+}
+.content-container .inner-card-container #contact-form #form-message {
+  height: 30%;
+}
+.content-container .inner-card-container #contact-form .submit-btn {
+  align-self: center;
+  width: 25%;
+  padding: 2%;
+}
 .content-container .inner-card-container #about-content {
   display: flex;
   height: 100%;
 }
 .content-container .inner-card-container #about-content #profile-pic {
-  height: 100%;
+  max-height: 75vh;
 }
 .content-container .inner-card-container #about-content #about-paragraphs {
   margin: 0;
@@ -237,13 +257,13 @@ p, a, li {
   width: 82%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   align-content: center;
   text-align: left;
 }
 .content-container .inner-card-container #about-content #about-paragraphs p {
   width: 80%;
+  margin-bottom: 10%;
 }
 .content-container .inner-card-container #portfolio-card-top {
   height: auto;

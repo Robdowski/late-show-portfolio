@@ -19,7 +19,7 @@ export default [
         img: cowboy,
         code: "https://github.com/python-django-unchained",
         live: "https://space-cowboys.netlify.app/",
-        bullets: ["Wrote algorithm to procedurally generate rooms, including walls, with random names and descriptions.", "Utilizing Unique User IDs allows for multiple players to be logged in at once.", "The player can choose from up to 9 planets to explore."]
+        bullets: ["Wrote algorithm to procedurally generate rooms, including walls, with random names and descriptions.", "Implemented Unique User IDs so multiple players can play simultaneously", "Handled front-end API calls to confirm character position on screen"]
     },
     {
         title: "Save Animals",
@@ -27,6 +27,6 @@ export default [
         img: animal,
         code: "https://github.com/save-the-animals-bw/save-the-animals",
         live: "https://savetheanimals.now.sh/",
-        bullets: ["User can log in as either a supporter or organization, and each role can perform different operations.", "Supporters can donate to campaigns to raise funds.", "Organizations can create and delete campaigns under their organization name."]
+        bullets: ["Implemented search feature for supporters to search campaigns", "Handled login and register authentication features", "Utilized JSON Web Tokens for secured routes"]
     }
 ]

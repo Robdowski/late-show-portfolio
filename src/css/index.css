@@ -14,6 +14,7 @@ html {
 
 p, a, li {
   font-family: "Arial";
+  font-size: max(2.2vh, 16px);
 }
 
 .navbar {
@@ -77,7 +78,7 @@ p, a, li {
 
 .home-content {
   font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
+  font-size: max(2.3vw, 23px);
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -111,8 +112,8 @@ p, a, li {
 .home-content .heading-circle {
   background-color: #1c4185;
   border-radius: 50%;
-  height: 600px;
-  width: 600px;
+  height: max(39.8vw, 398px);
+  width: max(39.8vw, 398px);
   position: absolute;
   align-self: center;
   z-index: 1;
@@ -121,8 +122,8 @@ p, a, li {
 .home-content .heading-circle-large {
   background-color: white;
   border-radius: 50%;
-  height: 620px;
-  width: 620px;
+  height: max(41vw, 410px);
+  width: max(41vw, 410px);
   position: absolute;
   align-self: center;
   border: 2px solid black;
@@ -173,12 +174,12 @@ p, a, li {
 }
 .content-container .content-card h1 {
   color: #fb2f48;
-  font-size: 6rem;
+  font-size: max(6vw, 60px);
   align-self: start;
 }
 .content-container .content-card p {
   color: white;
-  font-size: 1.6rem;
+  font-size: max(2.2vh, 16px);
 }
 .content-container .content-card div {
   width: 100%;
@@ -266,7 +267,7 @@ p, a, li {
   display: flex;
 }
 .content-container .inner-card-container #portfolio-card-bottom p {
-  font-size: 1.4rem;
+  font-size: max(2.2vh, 16px);
   text-align: justify;
   width: 55%;
 }
@@ -286,6 +287,20 @@ p, a, li {
   text-decoration: none;
   font-size: 1.4rem;
   text-align: center;
+}
+
+@media all and (min-width: 1900px) {
+  .home-content {
+    font-size: 1.6vw;
+  }
+  .home-content .heading-circle {
+    width: max(1.8vw, 700px);
+    height: max(1.8vw, 700px);
+  }
+  .home-content .heading-circle-large {
+    width: max(1.9vw, 720px);
+    height: max(1.9vw, 720px);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -28,6 +28,10 @@ p, a, li {
     background-color: #1c4185;
     z-index: 999;
 
+    #hamburger{
+        display:none;
+    }
+
     .nav-title{
         &:hover{
             cursor: pointer;
@@ -109,6 +113,10 @@ p, a, li {
         z-index: 2;
     }
 
+    i{
+        font-size: max(2vw, 25px);
+    }
+
     
 
     .heading-top{
@@ -184,7 +192,7 @@ p, a, li {
     margin:0 auto;
 
     .content-card{
-        width: calc(400px + 45vw);
+        width: max(80vw, 400px);
         background-color: white;
         padding: 2%;
         display:flex;
@@ -280,7 +288,7 @@ p, a, li {
         
 
         #portfolio-card-top{
-            height: 60%;
+            height: auto;
             display:flex;
             justify-content: space-around;
             align-items: center;
@@ -288,7 +296,7 @@ p, a, li {
 
             img{
             width: 55%;
-            
+            height: auto;
             }
 
             ul{
@@ -342,7 +350,11 @@ p, a, li {
 
 @media all and (min-width:1900px) {
     .home-content{
-        font-size: 1.6vw;
+        font-size: max(1.7vw, 40px);
+
+        i{
+            font-size: max(2vw, 25px)
+        }
 
         .heading-circle{
             width: max(1.8vw, 700px);
@@ -354,4 +366,49 @@ p, a, li {
             height: max(1.9vw, 720px)
         }
     }         
+}
+
+@media all and (max-width:700px) {
+    #profile-pic{
+        display:none;
+    }
+
+    #about-paragraphs{
+        margin: 5%;
+        width: 100%;
+        display:flex column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .navbar{
+        height: 100px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            align-self: flex-start;
+            margin-left: 5%;
+        }
+
+        .audio-player-nav{
+            align-self: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            width: 100%;
+            margin-bottom: 10px;
+            display:flex;
+            justify-content: space-around;
+        }
+    }
 }
